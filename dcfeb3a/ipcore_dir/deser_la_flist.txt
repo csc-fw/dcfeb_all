@@ -1,0 +1,18 @@
+# Output products list for <deser_la>
+_xmsgs\pn_parser.xmsgs
+deser_la.asy
+deser_la.cdc
+deser_la.constraints\deser_la.ucf
+deser_la.constraints\deser_la.xdc
+deser_la.gise
+deser_la.ncf
+deser_la.ngc
+deser_la.ucf
+deser_la.v
+deser_la.veo
+deser_la.xco
+deser_la.xdc
+deser_la.xise
+deser_la_flist.txt
+deser_la_readme.txt
+deser_la_xmdf.tcl

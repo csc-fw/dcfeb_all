@@ -1,0 +1,7 @@
+Synopsys VHDL Compiler, version comp201403rcp1, Build 010R, built Mar 25 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\Synopsys\fpga_I-2014.03-1\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@I:: ".\genpkg2877a05672"
+@I:: "syng0a05672"

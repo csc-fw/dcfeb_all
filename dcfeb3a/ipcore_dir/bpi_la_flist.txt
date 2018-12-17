@@ -1,0 +1,18 @@
+# Output products list for <bpi_la>
+_xmsgs\pn_parser.xmsgs
+bpi_la.asy
+bpi_la.cdc
+bpi_la.constraints\bpi_la.ucf
+bpi_la.constraints\bpi_la.xdc
+bpi_la.gise
+bpi_la.ncf
+bpi_la.ngc
+bpi_la.ucf
+bpi_la.v
+bpi_la.veo
+bpi_la.xco
+bpi_la.xdc
+bpi_la.xise
+bpi_la_flist.txt
+bpi_la_readme.txt
+bpi_la_xmdf.tcl

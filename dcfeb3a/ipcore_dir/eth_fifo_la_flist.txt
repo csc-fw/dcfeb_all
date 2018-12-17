@@ -1,0 +1,19 @@
+# Output products list for <eth_fifo_la>
+_xmsgs\pn_parser.xmsgs
+eth_fifo_la.asy
+eth_fifo_la.cdc
+eth_fifo_la.constraints\eth_fifo_la.ucf
+eth_fifo_la.constraints\eth_fifo_la.xdc
+eth_fifo_la.gise
+eth_fifo_la.ncf
+eth_fifo_la.ngc
+eth_fifo_la.sym
+eth_fifo_la.ucf
+eth_fifo_la.v
+eth_fifo_la.veo
+eth_fifo_la.xco
+eth_fifo_la.xdc
+eth_fifo_la.xise
+eth_fifo_la_flist.txt
+eth_fifo_la_readme.txt
+eth_fifo_la_xmdf.tcl

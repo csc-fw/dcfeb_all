@@ -1,0 +1,18 @@
+# Output products list for <auto_load_vio>
+_xmsgs\pn_parser.xmsgs
+auto_load_vio.asy
+auto_load_vio.cdc
+auto_load_vio.constraints\auto_load_vio.ucf
+auto_load_vio.constraints\auto_load_vio.xdc
+auto_load_vio.gise
+auto_load_vio.ngc
+auto_load_vio.sym
+auto_load_vio.ucf
+auto_load_vio.v
+auto_load_vio.veo
+auto_load_vio.xco
+auto_load_vio.xdc
+auto_load_vio.xise
+auto_load_vio_flist.txt
+auto_load_vio_readme.txt
+auto_load_vio_xmdf.tcl

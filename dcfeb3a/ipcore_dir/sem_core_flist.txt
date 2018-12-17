@@ -1,0 +1,26 @@
+# Output products list for <sem_core>
+_xmsgs\pn_parser.xmsgs
+sem_core.asy
+sem_core.gise
+sem_core.ngc
+sem_core.v
+sem_core.veo
+sem_core.xco
+sem_core.xise
+sem_core\doc\pg036_sem.pdf
+sem_core\example_design\icon_bscan_bufg.v
+sem_core\example_design\sem_core_sem_cfg.v
+sem_core\example_design\sem_core_sem_example.ucf
+sem_core\example_design\sem_core_sem_example.v
+sem_core\example_design\sem_core_sem_hid.v
+sem_core\example_design\sem_core_sem_mon.v
+sem_core\example_design\sem_core_sem_mon_fifo.v
+sem_core\example_design\sem_core_sem_mon_piso.v
+sem_core\example_design\sem_core_sem_mon_sipo.v
+sem_core\implement\implement.bat
+sem_core\implement\implement.sh
+sem_core\implement\xst.prj
+sem_core\implement\xst.scr
+sem_core\sem_v3_6_readme.txt
+sem_core_flist.txt
+sem_core_xmdf.tcl

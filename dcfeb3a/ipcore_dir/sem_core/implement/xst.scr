@@ -1,0 +1,12 @@
+run
+-ifmt mixed
+-ifn xst.prj
+-top sem_core_sem_example
+-ofn sem_example
+-opt_mode area
+-opt_level 2
+-bufg 0
+-lc area
+-iob false
+-p xc6vlx130t-ff1156-1
+

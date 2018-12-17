@@ -1,0 +1,18 @@
+# Output products list for <al_debug_vio>
+_xmsgs\pn_parser.xmsgs
+al_debug_vio.asy
+al_debug_vio.cdc
+al_debug_vio.constraints\al_debug_vio.ucf
+al_debug_vio.constraints\al_debug_vio.xdc
+al_debug_vio.gise
+al_debug_vio.ngc
+al_debug_vio.sym
+al_debug_vio.ucf
+al_debug_vio.v
+al_debug_vio.veo
+al_debug_vio.xco
+al_debug_vio.xdc
+al_debug_vio.xise
+al_debug_vio_flist.txt
+al_debug_vio_readme.txt
+al_debug_vio_xmdf.tcl

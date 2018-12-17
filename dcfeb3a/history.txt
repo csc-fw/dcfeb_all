@@ -1,0 +1,69 @@
+======================================================================
+=                                                                    =
+=  DCFEB: Official firmware for the production boards DCFEB3b        =
+=                                                                    =
+=  AUTHORS: Ben Bylsma - The Ohio State University                   =
+=                                                                    =
+=  Version numbers are tracked in hex                                =
+======================================================================
+
+
+V3.a5: 27 Dec. 2013, BGB
+--------------------------------
+Added Startup Status register and QPLL Lock Lost counter.
+Merged branch 14.6-trial back int branch Pro.
+
+V3.a0: 21 Dec. 2013, BGB
+--------------------------------
+Debugging SEM FAR addresses;
+
+V3.9c: 20 Dec. 2013, BGB
+--------------------------------
+Auto-loading constants with debugging code removed;
+
+V3.9a: 20 Dec. 2013, BGB
+--------------------------------
+Code for auto-loading constants from PROM with debugging code;
+
+
+V3.6a: 20 Dec. 2013, BGB
+--------------------------------
+Fixed ASCII to hex conversion;
+
+
+V3.69: 19 Dec. 2013, BGB
+--------------------------------
+Implemented Soft Error Mitigation (SEM) IP Core.
+
+V3.65: 09 Dec. 2013, BGB
+--------------------------------
+Switched to ISE 14.7; Removed SEM related modules from JTAG_access
+and put them in a separate module.
+
+V**: 01 Nov. 2013, BGB
+--------------------------------
+Added PRBS test capability to DAQ optical path.
+
+V3.61: 29 Oct. 2013, BGB
+--------------------------------
+SEM controller update; Changes to fix irregularities in L1A number
+in data stream; Added ChipScope Pro project files, coregen .cgc, 
+and tcl files.
+
+V3.51: 19 Sept. 2013, BGB
+--------------------------------
+Started a branch for ISE 14.6
+Used the latest version of the wizards to regenerate all Xilinx cores
+in the project, (clock managers, GTX transceivers, and Chip Scope Pro).
+In particular we are now using the latest version of the Soft Error
+Mitigation (SEM) IP.  We had issues with the version provided with
+ISE 12.4.  The was the main reason for trying ISE 14.6.
+
+V3.50: 17 Sept. 2013, BGB
+--------------------------------
+Reintroduce ipcore files for adc_frame_clk.xco for simulations.
+These files were mistakenly "cleaned".
+
+V3.50: 13 Sept. 2013, BGB
+--------------------------------
+Initial version under GIT control

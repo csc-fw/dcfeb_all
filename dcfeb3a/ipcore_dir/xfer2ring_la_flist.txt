@@ -1,0 +1,19 @@
+# Output products list for <xfer2ring_la>
+_xmsgs\pn_parser.xmsgs
+xfer2ring_la.asy
+xfer2ring_la.cdc
+xfer2ring_la.constraints\xfer2ring_la.ucf
+xfer2ring_la.constraints\xfer2ring_la.xdc
+xfer2ring_la.gise
+xfer2ring_la.ncf
+xfer2ring_la.ngc
+xfer2ring_la.sym
+xfer2ring_la.ucf
+xfer2ring_la.v
+xfer2ring_la.veo
+xfer2ring_la.xco
+xfer2ring_la.xdc
+xfer2ring_la.xise
+xfer2ring_la_flist.txt
+xfer2ring_la_readme.txt
+xfer2ring_la_xmdf.tcl

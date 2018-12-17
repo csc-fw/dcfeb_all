@@ -1,0 +1,16 @@
+# Output products list for <CSP_comp_daq_cntrl>
+CSP_comp_daq_cntrl.asy
+CSP_comp_daq_cntrl.constraints\CSP_comp_daq_cntrl.ucf
+CSP_comp_daq_cntrl.constraints\CSP_comp_daq_cntrl.xdc
+CSP_comp_daq_cntrl.gise
+CSP_comp_daq_cntrl.ngc
+CSP_comp_daq_cntrl.ucf
+CSP_comp_daq_cntrl.v
+CSP_comp_daq_cntrl.veo
+CSP_comp_daq_cntrl.xco
+CSP_comp_daq_cntrl.xdc
+CSP_comp_daq_cntrl.xise
+CSP_comp_daq_cntrl_flist.txt
+CSP_comp_daq_cntrl_readme.txt
+CSP_comp_daq_cntrl_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

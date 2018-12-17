@@ -1,0 +1,19 @@
+# Output products list for <daq_tx_la>
+_xmsgs\pn_parser.xmsgs
+daq_tx_la.asy
+daq_tx_la.cdc
+daq_tx_la.constraints\daq_tx_la.ucf
+daq_tx_la.constraints\daq_tx_la.xdc
+daq_tx_la.gise
+daq_tx_la.ncf
+daq_tx_la.ngc
+daq_tx_la.sym
+daq_tx_la.ucf
+daq_tx_la.v
+daq_tx_la.veo
+daq_tx_la.xco
+daq_tx_la.xdc
+daq_tx_la.xise
+daq_tx_la_flist.txt
+daq_tx_la_readme.txt
+daq_tx_la_xmdf.tcl

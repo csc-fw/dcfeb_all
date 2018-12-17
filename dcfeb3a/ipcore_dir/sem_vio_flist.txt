@@ -1,0 +1,18 @@
+# Output products list for <sem_vio>
+_xmsgs\pn_parser.xmsgs
+sem_vio.asy
+sem_vio.cdc
+sem_vio.constraints\sem_vio.ucf
+sem_vio.constraints\sem_vio.xdc
+sem_vio.gise
+sem_vio.ngc
+sem_vio.sym
+sem_vio.ucf
+sem_vio.v
+sem_vio.veo
+sem_vio.xco
+sem_vio.xdc
+sem_vio.xise
+sem_vio_flist.txt
+sem_vio_readme.txt
+sem_vio_xmdf.tcl

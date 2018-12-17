@@ -1,0 +1,98 @@
+$date
+   May 15, 2014 10:30:45
+$end
+$version
+   ChipScope Pro Analyzer  14.7 P.20131013 (Build 14700.13.286.464)
+$end
+$timescale
+    1ns
+$end
+
+$scope module RingBuf_v3.bb $end
+$var wire  1  n0 DataPort[0] $end
+$var wire  1  n1 DataPort[1] $end
+$var wire  1  n2 DataPort[2] $end
+$var wire  1  n3 DataPort[3] $end
+$var wire  1  n4 DataPort[4] $end
+$var wire  1  n5 DataPort[5] $end
+$var wire  1  n6 DataPort[6] $end
+$var wire  1  n7 DataPort[7] $end
+$var wire  1  n8 DataPort[8] $end
+$var wire  1  n9 DataPort[9] $end
+$var wire  1  n10 DataPort[10] $end
+$var wire  1  n11 DataPort[11] $end
+$var wire  1  n12 DataPort[12] $end
+$var wire  1  n13 DataPort[13] $end
+$var wire  1  n14 DataPort[14] $end
+$var wire  1  n15 DataPort[15] $end
+$var wire  1  n16 DataPort[16] $end
+$var wire  1  n17 DataPort[17] $end
+$var wire  1  n18 DataPort[18] $end
+$var wire  1  n19 DataPort[19] $end
+$var wire  1  n20 DataPort[20] $end
+$var wire  1  n21 DataPort[21] $end
+$var wire  1  n22 DataPort[22] $end
+$var wire  1  n23 DataPort[23] $end
+$var wire  1  n24 DataPort[24] $end
+$var wire  1  n25 DataPort[25] $end
+$var wire  1  n26 DataPort[26] $end
+$var wire  1  n27 DataPort[27] $end
+$var wire  1  n28 DataPort[28] $end
+$var wire  1  n29 DataPort[29] $end
+$var wire  1  n30 DataPort[30] $end
+$var wire  1  n31 DataPort[31] $end
+$var wire  1  n32 DataPort[32] $end
+$var wire  1  n33 DataPort[33] $end
+$var wire  1  n34 DataPort[34] $end
+$var wire  1  n35 DataPort[35] $end
+$var wire  1  n36 DataPort[36] $end
+$var wire  1  n37 DataPort[37] $end
+$var wire  1  n38 DataPort[38] $end
+$var wire  1  n39 DataPort[39] $end
+$var wire  1  n40 DataPort[40] $end
+$var wire  1  n41 DataPort[41] $end
+$var wire  1  n42 DataPort[42] $end
+$var wire  1  n43 DataPort[43] $end
+$var wire  1  n44 DataPort[44] $end
+$var wire  1  n45 DataPort[45] $end
+$var wire  1  n46 DataPort[46] $end
+$var wire  1  n47 DataPort[47] $end
+$var wire  1  n48 DataPort[48] $end
+$var wire  1  n49 DataPort[49] $end
+$var wire  1  n50 DataPort[50] $end
+$var wire  1  n51 DataPort[51] $end
+$var wire  1  n52 DataPort[52] $end
+$var wire  1  n53 DataPort[53] $end
+$var wire  1  n54 L1A $end
+$var wire  1  n55 L1A_MATCH $end
+$var wire  1  n56 l1a_match_d1 $end
+$var wire  1  n57 l1a_match_d2 $end
+$var wire  1  n58 phase_align0 $end
+$var wire  1  n59 phase_align1 $end
+$var wire  1  n60 l1a_phase $end
+$var wire  1  n61 l1a_phase_r1 $end
+$var wire  1  n62 stretch_l1a $end
+$var wire  1  n63 evt_start $end
+$var wire  1  n64 evt_end $end
+$var wire  1  n65 wren $end
+$var wire  1  n66 l1a_wren $end
+$var wire  1  n67 ovrlap $end
+$var wire  1  n68 multi_ovlp $end
+$var wire  1  n69 oinc $end
+$var wire  1  n70 srst $end
+$var wire  1  n71 l1a_smp_mt $end
+$var wire  1  n72 L1A_RD_EN $end
+$var wire  1  n73 RD_ENA_0 $end
+$var wire  1  n74 new_l1a $end
+$var wire 12 n75 event_pipe $end
+$var wire 4 n76 l1acnt $end
+$var wire 4 n77 l1acnt_r1 $end
+$var wire 4 n78 l1amcnt $end
+$var wire 4 n79 l1amcnt_r1 $end
+$var wire 12 n80 muxout_0 $end
+$var wire 4 n81 ovrlap_cnt $end
+$var wire 7 n82 sample $end
+$var wire 3 n83 sel $end
+$upscope $end
+$enddefinitions $end
+

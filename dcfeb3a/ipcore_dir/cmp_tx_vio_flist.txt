@@ -1,0 +1,17 @@
+# Output products list for <cmp_tx_vio>
+_xmsgs\pn_parser.xmsgs
+cmp_tx_vio.asy
+cmp_tx_vio.cdc
+cmp_tx_vio.constraints\cmp_tx_vio.ucf
+cmp_tx_vio.constraints\cmp_tx_vio.xdc
+cmp_tx_vio.gise
+cmp_tx_vio.ngc
+cmp_tx_vio.ucf
+cmp_tx_vio.v
+cmp_tx_vio.veo
+cmp_tx_vio.xco
+cmp_tx_vio.xdc
+cmp_tx_vio.xise
+cmp_tx_vio_flist.txt
+cmp_tx_vio_readme.txt
+cmp_tx_vio_xmdf.tcl

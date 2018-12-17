@@ -1,0 +1,19 @@
+# Output products list for <al_debug_la>
+_xmsgs\pn_parser.xmsgs
+al_debug_la.asy
+al_debug_la.cdc
+al_debug_la.constraints\al_debug_la.ucf
+al_debug_la.constraints\al_debug_la.xdc
+al_debug_la.gise
+al_debug_la.ncf
+al_debug_la.ngc
+al_debug_la.sym
+al_debug_la.ucf
+al_debug_la.v
+al_debug_la.veo
+al_debug_la.xco
+al_debug_la.xdc
+al_debug_la.xise
+al_debug_la_flist.txt
+al_debug_la_readme.txt
+al_debug_la_xmdf.tcl

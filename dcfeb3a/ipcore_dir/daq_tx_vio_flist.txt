@@ -1,0 +1,17 @@
+# Output products list for <daq_tx_vio>
+_xmsgs\pn_parser.xmsgs
+daq_tx_vio.asy
+daq_tx_vio.cdc
+daq_tx_vio.constraints\daq_tx_vio.ucf
+daq_tx_vio.constraints\daq_tx_vio.xdc
+daq_tx_vio.gise
+daq_tx_vio.ngc
+daq_tx_vio.ucf
+daq_tx_vio.v
+daq_tx_vio.veo
+daq_tx_vio.xco
+daq_tx_vio.xdc
+daq_tx_vio.xise
+daq_tx_vio_flist.txt
+daq_tx_vio_readme.txt
+daq_tx_vio_xmdf.tcl

@@ -1,0 +1,18 @@
+# Output products list for <cmp_tx_la>
+_xmsgs\pn_parser.xmsgs
+cmp_tx_la.asy
+cmp_tx_la.cdc
+cmp_tx_la.constraints\cmp_tx_la.ucf
+cmp_tx_la.constraints\cmp_tx_la.xdc
+cmp_tx_la.gise
+cmp_tx_la.ncf
+cmp_tx_la.ngc
+cmp_tx_la.ucf
+cmp_tx_la.v
+cmp_tx_la.veo
+cmp_tx_la.xco
+cmp_tx_la.xdc
+cmp_tx_la.xise
+cmp_tx_la_flist.txt
+cmp_tx_la_readme.txt
+cmp_tx_la_xmdf.tcl

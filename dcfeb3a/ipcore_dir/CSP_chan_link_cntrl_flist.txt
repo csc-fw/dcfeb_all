@@ -1,0 +1,17 @@
+# Output products list for <CSP_chan_link_cntrl>
+CSP_chan_link_cntrl.asy
+CSP_chan_link_cntrl.constraints\CSP_chan_link_cntrl.ucf
+CSP_chan_link_cntrl.constraints\CSP_chan_link_cntrl.xdc
+CSP_chan_link_cntrl.gise
+CSP_chan_link_cntrl.ngc
+CSP_chan_link_cntrl.sym
+CSP_chan_link_cntrl.ucf
+CSP_chan_link_cntrl.v
+CSP_chan_link_cntrl.veo
+CSP_chan_link_cntrl.xco
+CSP_chan_link_cntrl.xdc
+CSP_chan_link_cntrl.xise
+CSP_chan_link_cntrl_flist.txt
+CSP_chan_link_cntrl_readme.txt
+CSP_chan_link_cntrl_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

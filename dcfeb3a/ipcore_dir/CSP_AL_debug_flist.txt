@@ -1,0 +1,17 @@
+# Output products list for <CSP_AL_debug>
+CSP_AL_debug.asy
+CSP_AL_debug.constraints\CSP_AL_debug.ucf
+CSP_AL_debug.constraints\CSP_AL_debug.xdc
+CSP_AL_debug.gise
+CSP_AL_debug.ngc
+CSP_AL_debug.sym
+CSP_AL_debug.ucf
+CSP_AL_debug.v
+CSP_AL_debug.veo
+CSP_AL_debug.xco
+CSP_AL_debug.xdc
+CSP_AL_debug.xise
+CSP_AL_debug_flist.txt
+CSP_AL_debug_readme.txt
+CSP_AL_debug_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

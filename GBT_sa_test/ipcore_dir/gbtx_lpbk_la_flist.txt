@@ -1,0 +1,19 @@
+# Output products list for <gbtx_lpbk_la>
+_xmsgs\pn_parser.xmsgs
+gbtx_lpbk_la.asy
+gbtx_lpbk_la.cdc
+gbtx_lpbk_la.constraints\gbtx_lpbk_la.ucf
+gbtx_lpbk_la.constraints\gbtx_lpbk_la.xdc
+gbtx_lpbk_la.gise
+gbtx_lpbk_la.ncf
+gbtx_lpbk_la.ngc
+gbtx_lpbk_la.sym
+gbtx_lpbk_la.ucf
+gbtx_lpbk_la.v
+gbtx_lpbk_la.veo
+gbtx_lpbk_la.xco
+gbtx_lpbk_la.xdc
+gbtx_lpbk_la.xise
+gbtx_lpbk_la_flist.txt
+gbtx_lpbk_la_readme.txt
+gbtx_lpbk_la_xmdf.tcl

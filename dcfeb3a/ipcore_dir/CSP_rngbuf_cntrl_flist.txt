@@ -1,0 +1,17 @@
+# Output products list for <CSP_rngbuf_cntrl>
+CSP_rngbuf_cntrl.asy
+CSP_rngbuf_cntrl.constraints\CSP_rngbuf_cntrl.ucf
+CSP_rngbuf_cntrl.constraints\CSP_rngbuf_cntrl.xdc
+CSP_rngbuf_cntrl.gise
+CSP_rngbuf_cntrl.ngc
+CSP_rngbuf_cntrl.sym
+CSP_rngbuf_cntrl.ucf
+CSP_rngbuf_cntrl.v
+CSP_rngbuf_cntrl.veo
+CSP_rngbuf_cntrl.xco
+CSP_rngbuf_cntrl.xdc
+CSP_rngbuf_cntrl.xise
+CSP_rngbuf_cntrl_flist.txt
+CSP_rngbuf_cntrl_readme.txt
+CSP_rngbuf_cntrl_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

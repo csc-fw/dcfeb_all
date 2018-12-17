@@ -1,0 +1,69 @@
+//    JTAG functionality, instantiate shift registers for capture and settings,
+//    also contains serial interfaces to off chip devices
+//
+// Function  Description
+// ---------------------------------------
+//   0     | No Op 
+//   1     | JTAG System Reset (JTAG_SYS_RST), Equivalent to power on reset without reprogramming. Instruction only, (Auto reset)
+//   2     | DCFEB status reg (32 bits) shift only for reading back without updating
+//   3     | DCFEB status reg (32 bits) capture and shift for updated information.
+//   4     | Program Comparator DAC -- same as in old CFEB
+//   5     | Set Extra L1a Delay (2 bits) -- not used on DCFEB, exist for compatability with old DMB
+//   6     | Read FIFO 1 -- ADC data (16 channels x 12 bits = 192 bits) wide X (6 chips x 8 sample)/event deep
+//   7     | Set F5, F8, and F9 in one serial loop (daisy chained) for compatability with old DMB
+//   8     | Set Pre Block End (4 bits) (not needed in DCFEB) -- not used on DCFEB, exist for compatability with old DMB
+//   9     | Set Comparator Mode and Timing (5 bits) same format as old CFEB
+//  10     | Set Buckeye Mask for shifting (6 bits) (default 6'b111111) same format as old CFEB, one bit for each chip
+//  11     | Shift data to/from Buckeye chips (48 bits/chip)
+//  12     | Set ADC configuration MASK (12 bits)
+//  13     | Command to initialize ADC -- Instruction only, (Auto reset)
+//  14     | Shift data and write to ADC configuration memory (26 bits)
+//  15     | Command to restart pipeline -- Instruction only, (Auto reset)
+//  16     | Set pipeline depth (9 bits)
+//  17     | Set TTC source (2 bits) Selects 0:FF_EMU_mode, 1:FF_EEM_mode, or 2:Skew_Clr_mode
+//  18     | Set calibration mode to external. (only for optical modes) -- Instruction only
+//  19     | Set calibration mode to internal. (only for optical modes) -- Instruction only
+//  20     | Set number of samples to readout (7 bits).
+//  21     | Write word to BPI interface write FIFO (16 bits).
+//  22     | Read word from BPI readback FIFO (16 bits).
+//  23     | Read status word from BPI interface (16 bits).
+//  24     | Read BPI timer (32 bits).
+//  25     | Reset BPI interface. -- Instruction only, (Auto reset)
+//  26     | Disable BPI processing. -- Instruction only, persisting
+//  27     | Enable BPI processing. -- Instruction only, persisting
+//  28     | Comparator Clock phase register (5-bits, 0-31).
+//  29     | TMB transmit mode (2-bits, 0: comparator data, 1: fixed patterns, 2: counters, 3: randoms, 4: comparator data, 5: half strip patterns).
+//  30     | TMB half strips for injecting patterns into the optical serial data stream for transmit mode 5. (30-bits, 5 per layer) {ly6,...ly1}
+//  31     | TMB layer mask to indicat the active layers for half strip patterns in transmit mode 5. (6-bits, 1 per layer)
+//  32     | Set DAQ rate to 1 GbE (1.25Gbps line rate) -- Instruction only
+//  33     | Set DAQ rate to 2.56 GbE (3.2Gbps line rate) -- Instruction only
+//  34     | Program Calibration DAC -- same style as Comparator DAC
+//  35     | Send Control Byte to the MAX 1271 ADC (and conversion clocks)
+//  36     | Read back the MAX 1271 ADC conversion stored in the SPI return register.
+//  37     | Read the SEM status (10 bits).
+//  38     | Reset the configuration ECC error counters. -- Instruction only, (Auto reset)
+//  39     | Read the ECC error counters (16-bits total, {8-bits for multi-bit error count, 8-bits for single-bit error counts})
+//  40     | Set L1A_MATCH source to use only matched L1A's (skw_rw_l1a_match). Clear the USE_ANY_L1A flag. -- Instruction only
+//  41     | Set L1A_MATCH source to use any L1A to send data (skw_rw_l1a). Set the USE_ANY_L1A flag. -- Instruction only
+//  42     | Disable l1anum use in data to ODMB. Clear the L1A_HEAD flag. -- Instruction only
+//  43     | Enable l1anum use in data to ODMB. Set the L1A_HEAD flag.  This is the default -- Instruction only
+//  44     | Sampling Clock phase register (3-bits, 0-7).
+//  45     | PRBS test mode for DAQ optical path (3-bits, 0-7).
+//  46     | Inject error into PRBS test for DAQ optical path.
+//  47     | Take control of the SEM command interface (only needs to be set after ChipScope Pro has been in control).
+//  48     | Reset the double error detected flag (SEM module).
+//  49     | Send ASCII command to the SEM controller (8-bits). 
+//  50     | Frame Address Register (FAR) in Linear Address format indicating the frame containing the error (24-bits). 
+//  51     | Frame Address Register (FAR) in Physical Address format indicating the frame containing the error (24-bits). 
+//  52     | Register Selection Word (Reg_Sel_Wrd) for selecting which register to independently capture and readback (8-bits). 
+//  53     | Readback Select Register: Register to capture selected register indicated in Reg_Sel_Wrd (16-bits). 
+//  54     | QPLL reset: This requires a NoOp afterwards to clear the reset then a Hard reset.  All clocks stop while active. QPLL takes 0.5 seconds to lock. 
+//  55     | QPLL lock lost counter (8-bits). 
+//  56     | Startup Status register (16-bits).  {qpll_lock,qpll_error,qpll_cnt_ovrflw,1'b0,eos,trg_mmcm_lock,daq_mmcm_lock,adc_rdy,run,al_status[2:0],por_state[3:0]};
+//  57     | Read L1A counter (24 bits).
+//  58     | Read L1A_MATCH counter (12 bits).
+//  59     | Read INJPLS counter (12 bits).
+//  60     | Read EXTPLS counter (12 bits).
+//  61     | Read BC0 counter (12 bits).
+//  62     | Comparator Clock Phase Reset (CMP_PHS_JTAG_RST),  Instruction only, (Auto reset)
+

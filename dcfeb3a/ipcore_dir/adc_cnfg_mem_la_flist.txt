@@ -1,0 +1,18 @@
+# Output products list for <adc_cnfg_mem_la>
+_xmsgs\pn_parser.xmsgs
+adc_cnfg_mem_la.asy
+adc_cnfg_mem_la.cdc
+adc_cnfg_mem_la.constraints\adc_cnfg_mem_la.ucf
+adc_cnfg_mem_la.constraints\adc_cnfg_mem_la.xdc
+adc_cnfg_mem_la.gise
+adc_cnfg_mem_la.ncf
+adc_cnfg_mem_la.ngc
+adc_cnfg_mem_la.ucf
+adc_cnfg_mem_la.v
+adc_cnfg_mem_la.veo
+adc_cnfg_mem_la.xco
+adc_cnfg_mem_la.xdc
+adc_cnfg_mem_la.xise
+adc_cnfg_mem_la_flist.txt
+adc_cnfg_mem_la_readme.txt
+adc_cnfg_mem_la_xmdf.tcl

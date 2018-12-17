@@ -1,0 +1,17 @@
+# Output products list for <deser_vio>
+_xmsgs\pn_parser.xmsgs
+deser_vio.asy
+deser_vio.cdc
+deser_vio.constraints\deser_vio.ucf
+deser_vio.constraints\deser_vio.xdc
+deser_vio.gise
+deser_vio.ngc
+deser_vio.ucf
+deser_vio.v
+deser_vio.veo
+deser_vio.xco
+deser_vio.xdc
+deser_vio.xise
+deser_vio_flist.txt
+deser_vio_readme.txt
+deser_vio_xmdf.tcl

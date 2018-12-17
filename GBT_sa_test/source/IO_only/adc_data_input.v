@@ -1,0 +1,157 @@
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    14:24:55 03/09/2011 
+// Design Name: 
+// Module Name:    adc_data_input 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+
+module adc_data_input(
+	 
+    // Differential Serial Data Inputs
+    input [15:0] G1AD_N,
+    input [15:0] G1AD_P,
+    input [15:0] G2AD_N,
+    input [15:0] G2AD_P,
+    input [15:0] G3AD_N,
+    input [15:0] G3AD_P,
+    input [15:0] G4AD_N,
+    input [15:0] G4AD_P,
+    input [15:0] G5AD_N,
+    input [15:0] G5AD_P,
+    input [15:0] G6AD_N,
+    input [15:0] G6AD_P,
+    // Differential Frame Clock Inputs
+    input G1ADCLK0N,
+    input G1ADCLK0P,
+    input G1ADCLK1N,
+    input G1ADCLK1P,
+    input G2ADCLK0N,
+    input G2ADCLK0P,
+    input G2ADCLK1N,
+    input G2ADCLK1P,
+    input G3ADCLK0N,
+    input G3ADCLK0P,
+    input G3ADCLK1N,
+    input G3ADCLK1P,
+    input G4ADCLK0N,
+    input G4ADCLK0P,
+    input G4ADCLK1N,
+    input G4ADCLK1P,
+    input G5ADCLK0N,
+    input G5ADCLK0P,
+    input G5ADCLK1N,
+    input G5ADCLK1P,
+    input G6ADCLK0N,
+    input G6ADCLK0P,
+    input G6ADCLK1N,
+    input G6ADCLK1P,
+    // Differential Bit Clock Inputs
+    input G1LCLK0N,
+    input G1LCLK0P,
+    input G1LCLK1N,
+    input G1LCLK1P,
+    input G2LCLK0N,
+    input G2LCLK0P,
+    input G2LCLK1N,
+    input G2LCLK1P,
+    input G3LCLK0N,
+    input G3LCLK0P,
+    input G3LCLK1N,
+    input G3LCLK1P,
+    input G4LCLK0N,
+    input G4LCLK0P,
+    input G4LCLK1N,
+    input G4LCLK1P,
+    input G5LCLK0N,
+    input G5LCLK0P,
+    input G5LCLK1N,
+    input G5LCLK1P,
+    input G6LCLK0N,
+    input G6LCLK0P,
+    input G6LCLK1N,
+    input G6LCLK1P
+    );
+
+
+  wire [7:0] ad[6:1][1:0];
+  wire [7:0] ad_b[6:1][1:0];
+  
+  wire adclk[6:1][1:0];
+  wire lclk[6:1][1:0];
+  
+  
+   IBUFDS_DIFF_OUT #(.DIFF_TERM("TRUE"),.IBUF_LOW_PWR("TRUE"),.IOSTANDARD("DEFAULT"))
+	IBUFDS_DIFF_OUT_G1AD0[7:0] (.O(ad[1][0]),.OB(ad_b[1][0]),.I(G1AD_P[7:0]),.IB(G1AD_N[7:0]));
+   IBUFDS_DIFF_OUT #(.DIFF_TERM("TRUE"),.IBUF_LOW_PWR("TRUE"),.IOSTANDARD("DEFAULT"))
+	IBUFDS_DIFF_OUT_G1AD1[15:8] (.O(ad[1][1]),.OB(ad_b[1][1]),.I(G1AD_P[15:8]),.IB(G1AD_N[15:8]));
+  
+   IBUFDS_DIFF_OUT #(.DIFF_TERM("TRUE"),.IBUF_LOW_PWR("TRUE"),.IOSTANDARD("DEFAULT"))
+	IBUFDS_DIFF_OUT_G2AD0[7:0] (.O(ad[2][0]),.OB(ad_b[2][0]),.I(G2AD_P[7:0]),.IB(G2AD_N[7:0]));
+   IBUFDS_DIFF_OUT #(.DIFF_TERM("TRUE"),.IBUF_LOW_PWR("TRUE"),.IOSTANDARD("DEFAULT"))
+	IBUFDS_DIFF_OUT_G2AD1[15:8] (.O(ad[2][1]),.OB(ad_b[2][1]),.I(G2AD_P[15:8]),.IB(G2AD_N[15:8]));
+  
+   IBUFDS_DIFF_OUT #(.DIFF_TERM("TRUE"),.IBUF_LOW_PWR("TRUE"),.IOSTANDARD("DEFAULT"))
+	IBUFDS_DIFF_OUT_G3AD0[7:0] (.O(ad[3][0]),.OB(ad_b[3][0]),.I(G3AD_P[7:0]),.IB(G3AD_N[7:0]));
+   IBUFDS_DIFF_OUT #(.DIFF_TERM("TRUE"),.IBUF_LOW_PWR("TRUE"),.IOSTANDARD("DEFAULT"))
+	IBUFDS_DIFF_OUT_G3AD1[15:8] (.O(ad[3][1]),.OB(ad_b[3][1]),.I(G3AD_P[15:8]),.IB(G3AD_N[15:8]));
+  
+   IBUFDS_DIFF_OUT #(.DIFF_TERM("TRUE"),.IBUF_LOW_PWR("TRUE"),.IOSTANDARD("DEFAULT"))
+	IBUFDS_DIFF_OUT_G4AD0[7:0] (.O(ad[4][0]),.OB(ad_b[4][0]),.I(G4AD_P[7:0]),.IB(G4AD_N[7:0]));
+   IBUFDS_DIFF_OUT #(.DIFF_TERM("TRUE"),.IBUF_LOW_PWR("TRUE"),.IOSTANDARD("DEFAULT"))
+	IBUFDS_DIFF_OUT_G4AD1[15:8] (.O(ad[4][1]),.OB(ad_b[4][1]),.I(G4AD_P[15:8]),.IB(G4AD_N[15:8]));
+  
+   IBUFDS_DIFF_OUT #(.DIFF_TERM("TRUE"),.IBUF_LOW_PWR("TRUE"),.IOSTANDARD("DEFAULT"))
+	IBUFDS_DIFF_OUT_G5AD0[7:0] (.O(ad[5][0]),.OB(ad_b[5][0]),.I(G5AD_P[7:0]),.IB(G5AD_N[7:0]));
+   IBUFDS_DIFF_OUT #(.DIFF_TERM("TRUE"),.IBUF_LOW_PWR("TRUE"),.IOSTANDARD("DEFAULT"))
+	IBUFDS_DIFF_OUT_G5AD1[15:8] (.O(ad[5][1]),.OB(ad_b[5][1]),.I(G5AD_P[15:8]),.IB(G5AD_N[15:8]));
+  
+   IBUFDS_DIFF_OUT #(.DIFF_TERM("TRUE"),.IBUF_LOW_PWR("TRUE"),.IOSTANDARD("DEFAULT"))
+	IBUFDS_DIFF_OUT_G6AD0[7:0] (.O(ad[6][0]),.OB(ad_b[6][0]),.I(G6AD_P[7:0]),.IB(G6AD_N[7:0]));
+   IBUFDS_DIFF_OUT #(.DIFF_TERM("TRUE"),.IBUF_LOW_PWR("TRUE"),.IOSTANDARD("DEFAULT"))
+	IBUFDS_DIFF_OUT_G6AD1[15:8] (.O(ad[6][1]),.OB(ad_b[6][1]),.I(G6AD_P[15:8]),.IB(G6AD_N[15:8]));
+
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G1ADCLK0 (.O(adclk[1][0]),.I(G1ADCLK0P),.IB(G1ADCLK0N));
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G1ADCLK1 (.O(adclk[1][1]),.I(G1ADCLK1P),.IB(G1ADCLK1N));
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G1LCLK0 (.O(lclk[1][0]),.I(G1LCLK0P),.IB(G1LCLK0N));
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G1LCLK1 (.O(lclk[1][1]),.I(G1LCLK1P),.IB(G1LCLK1N));
+
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G2ADCLK0 (.O(adclk[2][0]),.I(G2ADCLK0P),.IB(G2ADCLK0N));
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G2ADCLK1 (.O(adclk[2][1]),.I(G2ADCLK1P),.IB(G2ADCLK1N));
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G2LCLK0 (.O(lclk[2][0]),.I(G2LCLK0P),.IB(G2LCLK0N));
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G2LCLK1 (.O(lclk[2][1]),.I(G2LCLK1P),.IB(G2LCLK1N));
+
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G3ADCLK0 (.O(adclk[3][0]),.I(G3ADCLK0P),.IB(G3ADCLK0N));
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G3ADCLK1 (.O(adclk[3][1]),.I(G3ADCLK1P),.IB(G3ADCLK1N));
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G3LCLK0 (.O(lclk[3][0]),.I(G3LCLK0P),.IB(G3LCLK0N));
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G3LCLK1 (.O(lclk[3][1]),.I(G3LCLK1P),.IB(G3LCLK1N));
+
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G4ADCLK0 (.O(adclk[4][0]),.I(G4ADCLK0P),.IB(G4ADCLK0N));
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G4ADCLK1 (.O(adclk[4][1]),.I(G4ADCLK1P),.IB(G4ADCLK1N));
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G4LCLK0 (.O(lclk[4][0]),.I(G4LCLK0P),.IB(G4LCLK0N));
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G4LCLK1 (.O(lclk[4][1]),.I(G4LCLK1P),.IB(G4LCLK1N));
+
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G5ADCLK0 (.O(adclk[5][0]),.I(G5ADCLK0P),.IB(G5ADCLK0N));
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G5ADCLK1 (.O(adclk[5][1]),.I(G5ADCLK1P),.IB(G5ADCLK1N));
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G5LCLK0 (.O(lclk[5][0]),.I(G5LCLK0P),.IB(G5LCLK0N));
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G5LCLK1 (.O(lclk[5][1]),.I(G5LCLK1P),.IB(G5LCLK1N));
+
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G6ADCLK0 (.O(adclk[6][0]),.I(G6ADCLK0P),.IB(G6ADCLK0N));
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G6ADCLK1 (.O(adclk[6][1]),.I(G6ADCLK1P),.IB(G6ADCLK1N));
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G6LCLK0 (.O(lclk[6][0]),.I(G6LCLK0P),.IB(G6LCLK0N));
+  IBUFGDS #(.DIFF_TERM("TRUE"),.IOSTANDARD("DEFAULT")) IBUFGDS_G6LCLK1 (.O(lclk[6][1]),.I(G6LCLK1P),.IB(G6LCLK1N));
+
+
+endmodule

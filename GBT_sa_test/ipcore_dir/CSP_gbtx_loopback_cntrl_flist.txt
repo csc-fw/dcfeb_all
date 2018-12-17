@@ -1,0 +1,17 @@
+# Output products list for <CSP_gbtx_loopback_cntrl>
+CSP_gbtx_loopback_cntrl.asy
+CSP_gbtx_loopback_cntrl.constraints\CSP_gbtx_loopback_cntrl.ucf
+CSP_gbtx_loopback_cntrl.constraints\CSP_gbtx_loopback_cntrl.xdc
+CSP_gbtx_loopback_cntrl.gise
+CSP_gbtx_loopback_cntrl.ngc
+CSP_gbtx_loopback_cntrl.sym
+CSP_gbtx_loopback_cntrl.ucf
+CSP_gbtx_loopback_cntrl.v
+CSP_gbtx_loopback_cntrl.veo
+CSP_gbtx_loopback_cntrl.xco
+CSP_gbtx_loopback_cntrl.xdc
+CSP_gbtx_loopback_cntrl.xise
+CSP_gbtx_loopback_cntrl_flist.txt
+CSP_gbtx_loopback_cntrl_readme.txt
+CSP_gbtx_loopback_cntrl_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

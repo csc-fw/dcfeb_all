@@ -1,0 +1,19 @@
+# Output products list for <auto_load_la>
+_xmsgs\pn_parser.xmsgs
+auto_load_la.asy
+auto_load_la.cdc
+auto_load_la.constraints\auto_load_la.ucf
+auto_load_la.constraints\auto_load_la.xdc
+auto_load_la.gise
+auto_load_la.ncf
+auto_load_la.ngc
+auto_load_la.sym
+auto_load_la.ucf
+auto_load_la.v
+auto_load_la.veo
+auto_load_la.xco
+auto_load_la.xdc
+auto_load_la.xise
+auto_load_la_flist.txt
+auto_load_la_readme.txt
+auto_load_la_xmdf.tcl

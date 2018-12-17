@@ -1,0 +1,18 @@
+# Output products list for <pipe_la>
+_xmsgs\pn_parser.xmsgs
+pipe_la.asy
+pipe_la.cdc
+pipe_la.constraints\pipe_la.ucf
+pipe_la.constraints\pipe_la.xdc
+pipe_la.gise
+pipe_la.ncf
+pipe_la.ngc
+pipe_la.ucf
+pipe_la.v
+pipe_la.veo
+pipe_la.xco
+pipe_la.xdc
+pipe_la.xise
+pipe_la_flist.txt
+pipe_la_readme.txt
+pipe_la_xmdf.tcl

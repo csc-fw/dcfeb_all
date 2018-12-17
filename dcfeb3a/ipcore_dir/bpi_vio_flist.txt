@@ -1,0 +1,17 @@
+# Output products list for <bpi_vio>
+_xmsgs\pn_parser.xmsgs
+bpi_vio.asy
+bpi_vio.cdc
+bpi_vio.constraints\bpi_vio.ucf
+bpi_vio.constraints\bpi_vio.xdc
+bpi_vio.gise
+bpi_vio.ngc
+bpi_vio.ucf
+bpi_vio.v
+bpi_vio.veo
+bpi_vio.xco
+bpi_vio.xdc
+bpi_vio.xise
+bpi_vio_flist.txt
+bpi_vio_readme.txt
+bpi_vio_xmdf.tcl

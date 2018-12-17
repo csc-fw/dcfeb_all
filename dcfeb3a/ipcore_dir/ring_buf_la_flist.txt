@@ -1,0 +1,19 @@
+# Output products list for <ring_buf_la>
+_xmsgs\pn_parser.xmsgs
+ring_buf_la.asy
+ring_buf_la.cdc
+ring_buf_la.constraints\ring_buf_la.ucf
+ring_buf_la.constraints\ring_buf_la.xdc
+ring_buf_la.gise
+ring_buf_la.ncf
+ring_buf_la.ngc
+ring_buf_la.sym
+ring_buf_la.ucf
+ring_buf_la.v
+ring_buf_la.veo
+ring_buf_la.xco
+ring_buf_la.xdc
+ring_buf_la.xise
+ring_buf_la_flist.txt
+ring_buf_la_readme.txt
+ring_buf_la_xmdf.tcl

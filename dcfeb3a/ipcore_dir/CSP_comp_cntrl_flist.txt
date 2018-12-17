@@ -1,0 +1,16 @@
+# Output products list for <CSP_comp_cntrl>
+CSP_comp_cntrl.asy
+CSP_comp_cntrl.constraints\CSP_comp_cntrl.ucf
+CSP_comp_cntrl.constraints\CSP_comp_cntrl.xdc
+CSP_comp_cntrl.gise
+CSP_comp_cntrl.ngc
+CSP_comp_cntrl.ucf
+CSP_comp_cntrl.v
+CSP_comp_cntrl.veo
+CSP_comp_cntrl.xco
+CSP_comp_cntrl.xdc
+CSP_comp_cntrl.xise
+CSP_comp_cntrl_flist.txt
+CSP_comp_cntrl_readme.txt
+CSP_comp_cntrl_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

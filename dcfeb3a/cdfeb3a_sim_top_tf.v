@@ -1,0 +1,689 @@
+`timescale 1ns / 1ps
+
+////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer:
+//
+// Create Date:   10:49:12 06/24/2014
+// Design Name:   dcfeb3a
+// Module Name:   C:/Users/bylsma/Projects/DCFEB/firmware/ISE_14.7/dcfeb3a/cdfeb3a_sim_top_tf.v
+// Project Name:  dcfeb3a
+// Target Device:  
+// Tool versions:  
+// Description: 
+//
+// Verilog Test Fixture created by ISE for module: dcfeb3a
+//
+// Dependencies:
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+////////////////////////////////////////////////////////////////////////////////
+
+module cdfeb3a_sim_top_tf;
+
+	// Inputs
+	reg CMS_CLK_N;
+	reg CMS_CLK_P;
+	reg CMS80_N;
+	reg CMS80_P;
+	reg QPLL_CLK_AC_P;
+	reg QPLL_CLK_AC_N;
+	reg XO_CLK_AC_P;
+	reg XO_CLK_AC_N;
+	reg \FEM_CLK320- ;
+	reg \FEM_CLK320+ ;
+	reg GC0N;
+	reg GC0P;
+	reg GC1N;
+	reg GC1P;
+	reg CLK320_SIGDET;
+	reg \FEM_RX_DAT- ;
+	reg \FEM_RX_DAT+ ;
+	reg CTRL_SIGDET;
+	reg FMU_TOKEN;
+	reg FMU_L1A;
+	reg FMU_RESYNC;
+	reg FMU_SPI_CS0;
+	reg FMU_SPI_CS1;
+	reg FMU_SPI_CLK;
+	reg FMU_SPI_DAT;
+	reg FMU_INJPLS;
+	reg FMU_EXTPLS;
+	reg \SKW_EXTPLS- ;
+	reg \SKW_EXTPLS+ ;
+	reg \SKW_INJPLS- ;
+	reg \SKW_INJPLS+ ;
+	reg INJPLS_LV;
+	reg EXTPLS_LV;
+	reg SPI_RTN_LV;
+	reg G1SHOUTLV;
+	reg G2SHOUTLV;
+	reg G3SHOUTLV;
+	reg G4SHOUTLV;
+	reg G5SHOUTLV;
+	reg G6SHOUTLV;
+	reg [15:0] G1AD_N;
+	reg [15:0] G1AD_P;
+	reg [15:0] G2AD_N;
+	reg [15:0] G2AD_P;
+	reg [15:0] G3AD_N;
+	reg [15:0] G3AD_P;
+	reg [15:0] G4AD_N;
+	reg [15:0] G4AD_P;
+	reg [15:0] G5AD_N;
+	reg [15:0] G5AD_P;
+	reg [15:0] G6AD_N;
+	reg [15:0] G6AD_P;
+	reg G1ADCLK0N;
+	reg G1ADCLK0P;
+	reg G1ADCLK1N;
+	reg G1ADCLK1P;
+	reg G1LCLK0N;
+	reg G1LCLK0P;
+	reg G1LCLK1N;
+	reg G1LCLK1P;
+	reg G2ADCLK0N;
+	reg G2ADCLK0P;
+	reg G2ADCLK1N;
+	reg G2ADCLK1P;
+	reg G2LCLK0N;
+	reg G2LCLK0P;
+	reg G2LCLK1N;
+	reg G2LCLK1P;
+	reg G3ADCLK0N;
+	reg G3ADCLK0P;
+	reg G3ADCLK1N;
+	reg G3ADCLK1P;
+	reg G3LCLK0N;
+	reg G3LCLK0P;
+	reg G3LCLK1N;
+	reg G3LCLK1P;
+	reg G4ADCLK0N;
+	reg G4ADCLK0P;
+	reg G4ADCLK1N;
+	reg G4ADCLK1P;
+	reg G4LCLK0N;
+	reg G4LCLK0P;
+	reg G4LCLK1N;
+	reg G4LCLK1P;
+	reg G5ADCLK0N;
+	reg G5ADCLK0P;
+	reg G5ADCLK1N;
+	reg G5ADCLK1P;
+	reg G5LCLK0N;
+	reg G5LCLK0P;
+	reg G5LCLK1N;
+	reg G5LCLK1P;
+	reg G6ADCLK0N;
+	reg G6ADCLK0P;
+	reg G6ADCLK1N;
+	reg G6ADCLK1P;
+	reg G6LCLK0N;
+	reg G6LCLK0P;
+	reg G6LCLK1N;
+	reg G6LCLK1P;
+	reg [7:0] G1C_LV;
+	reg [7:0] G2C_LV;
+	reg [7:0] G3C_LV;
+	reg [7:0] G4C_LV;
+	reg [7:0] G5C_LV;
+	reg [7:0] G6C_LV;
+	reg \SKW_L1A- ;
+	reg \SKW_L1A+ ;
+	reg \SKW_L1A_MATCH- ;
+	reg \SKW_L1A_MATCH+ ;
+	reg \SKW_RESYNC- ;
+	reg \SKW_RESYNC+ ;
+	reg \SKW_BC0- ;
+	reg \SKW_BC0+ ;
+	reg DAQ_RX_P;
+	reg DAQ_RX_N;
+	reg ALT_SIGDET;
+	reg TRG_RX_P;
+	reg TRG_RX_N;
+	reg QP_ERROR;
+	reg QP_LOCKED;
+	reg DV4P_3_CUR_P;
+	reg DV4P_3_CUR_N;
+	reg DV3P_2_CUR_N;
+	reg DV3P_2_CUR_P;
+	reg DV3P_25_CUR_N;
+	reg DV3P_25_CUR_P;
+	reg V3PDCOMP_MONN;
+	reg V3PDCOMP_MONP;
+	reg V3PIO_MONN;
+	reg V3PIO_MONP;
+	reg V25IO_MONN;
+	reg V25IO_MONP;
+	reg V5PACOMP_MONN;
+	reg V5PACOMP_MONP;
+	reg V5PSUB_MONN;
+	reg V5PSUB_MONP;
+	reg V5PPA_MONP;
+	reg V5PPA_MONN;
+	reg V33PAADC_MONP;
+	reg V33PAADC_MONN;
+	reg V18PDADC_MONP;
+	reg V18PDADC_MONN;
+	reg V5PAMP_MONP;
+	reg V5PAMP_MONN;
+	reg AV54P_3_CUR_N;
+	reg AV54P_3_CUR_P;
+	reg AV54P_5_CUR_N;
+	reg AV54P_5_CUR_P;
+	reg SEL_SKW_B;
+	reg SEL_CON_B;
+
+	// Outputs
+	wire TP_B35_0N;
+	wire TP_B35_0P;
+	wire FEM_REPROGRAM;
+	wire FEM_TCK;
+	wire FEM_TDI;
+	wire FEM_TMS;
+	wire \FEM_TX_DAT- ;
+	wire \FEM_TX_DAT+ ;
+	wire CTRL_TDIS;
+	wire FMU_SPI_BUSY;
+	wire FMU_SPI_RTN_CLK;
+	wire FMU_SPI_RTN_DAT;
+	wire FMU_UL_TCK;
+	wire FMU_UL_TDI;
+	wire FMU_UL_TMS;
+	wire FMU_FLF_E1;
+	wire FMU_FLF_P1;
+	wire FMU_FLF_P2;
+	wire FMU_VLF_E2;
+	wire \FMU_CLK40_UL- ;
+	wire \FMU_CLK40_UL+ ;
+	wire RST_FFEMU;
+	wire \INJPULSE- ;
+	wire \INJPULSE+ ;
+	wire \EXTPULSE- ;
+	wire \EXTPULSE+ ;
+	wire SPI_CK_LV;
+	wire SPI_DAT_LV;
+	wire ADC_CS_LV_B;
+	wire CAL_DAC_CS_LV_B;
+	wire COMP_DAC_CS_LV_B;
+	wire BPI_AD21_RS0;
+	wire BPI_AD22_RS1;
+	wire FCS_B;
+	wire FOE_B;
+	wire FWE_B;
+	wire FLATCH_B;
+	wire G1SHINLV;
+	wire G2SHINLV;
+	wire G3SHINLV;
+	wire G4SHINLV;
+	wire G5SHINLV;
+	wire G6SHINLV;
+	wire G1SHCKLV;
+	wire G2SHCKLV;
+	wire G3SHCKLV;
+	wire G4SHCKLV;
+	wire G5SHCKLV;
+	wire G6SHCKLV;
+	wire G1ADC_CS0_B_25;
+	wire G1ADC_CS1_B_25;
+	wire G2ADC_CS0_B_25;
+	wire G2ADC_CS1_B_25;
+	wire G3ADC_CS0_B_25;
+	wire G3ADC_CS1_B_25;
+	wire G4ADC_CS0_B_25;
+	wire G4ADC_CS1_B_25;
+	wire G5ADC_CS0_B_25;
+	wire G5ADC_CS1_B_25;
+	wire G6ADC_CS0_B_25;
+	wire G6ADC_CS1_B_25;
+	wire ADC_RST_B_25;
+	wire ADC_SCLK_25;
+	wire ADC_SDATA_25;
+	wire GA1ADCCLK_FN;
+	wire GA1ADCCLK_FP;
+	wire GA2ADCCLK_FN;
+	wire GA2ADCCLK_FP;
+	wire GA3ADCCLK_FN;
+	wire GA3ADCCLK_FP;
+	wire [1:0] CMODE;
+	wire [2:0] CTIME;
+	wire LCTCLK;
+	wire LCTRST;
+	wire [15:0] DATAOUT;
+	wire CHAN_LNK_CLK;
+	wire MB_FIFO_PUSH_B;
+	wire MOVLP;
+	wire OVLPMUX;
+	wire DATAAVAIL;
+	wire ENDWORD;
+	wire DAQ_TDIS;
+	wire DAQ_TX_P;
+	wire DAQ_TX_N;
+	wire TRG_TDIS;
+	wire TRG_TX_P;
+	wire TRG_TX_N;
+	wire QP_RST_B;
+
+	// Bidirs
+	wire [22:0] BPI_AD;
+	wire [15:0] CFG_DAT;
+	wire [2:0] TP_B24_;
+	wire [15:0] TP_B25_;
+	wire [1:0] TP_B26_;
+	wire [14:1] TP_B35_;
+
+	// Instantiate the Unit Under Test (UUT)
+	dcfeb3a uut (
+		.CMS_CLK_N(CMS_CLK_N), 
+		.CMS_CLK_P(CMS_CLK_P), 
+		.CMS80_N(CMS80_N), 
+		.CMS80_P(CMS80_P), 
+		.QPLL_CLK_AC_P(QPLL_CLK_AC_P), 
+		.QPLL_CLK_AC_N(QPLL_CLK_AC_N), 
+		.XO_CLK_AC_P(XO_CLK_AC_P), 
+		.XO_CLK_AC_N(XO_CLK_AC_N), 
+		.\FEM_CLK320- (\FEM_CLK320- ), 
+		.\FEM_CLK320+ (\FEM_CLK320+ ), 
+		.GC0N(GC0N), 
+		.GC0P(GC0P), 
+		.GC1N(GC1N), 
+		.GC1P(GC1P), 
+		.TP_B35_0N(TP_B35_0N), 
+		.TP_B35_0P(TP_B35_0P), 
+		.CLK320_SIGDET(CLK320_SIGDET), 
+		.\FEM_RX_DAT- (\FEM_RX_DAT- ), 
+		.\FEM_RX_DAT+ (\FEM_RX_DAT+ ), 
+		.FEM_REPROGRAM(FEM_REPROGRAM), 
+		.FEM_TCK(FEM_TCK), 
+		.FEM_TDI(FEM_TDI), 
+		.FEM_TMS(FEM_TMS), 
+		.\FEM_TX_DAT- (\FEM_TX_DAT- ), 
+		.\FEM_TX_DAT+ (\FEM_TX_DAT+ ), 
+		.CTRL_SIGDET(CTRL_SIGDET), 
+		.CTRL_TDIS(CTRL_TDIS), 
+		.FMU_TOKEN(FMU_TOKEN), 
+		.FMU_L1A(FMU_L1A), 
+		.FMU_RESYNC(FMU_RESYNC), 
+		.FMU_SPI_CS0(FMU_SPI_CS0), 
+		.FMU_SPI_CS1(FMU_SPI_CS1), 
+		.FMU_SPI_CLK(FMU_SPI_CLK), 
+		.FMU_SPI_DAT(FMU_SPI_DAT), 
+		.FMU_SPI_BUSY(FMU_SPI_BUSY), 
+		.FMU_SPI_RTN_CLK(FMU_SPI_RTN_CLK), 
+		.FMU_SPI_RTN_DAT(FMU_SPI_RTN_DAT), 
+		.FMU_UL_TCK(FMU_UL_TCK), 
+		.FMU_UL_TDI(FMU_UL_TDI), 
+		.FMU_UL_TMS(FMU_UL_TMS), 
+		.FMU_FLF_E1(FMU_FLF_E1), 
+		.FMU_FLF_P1(FMU_FLF_P1), 
+		.FMU_FLF_P2(FMU_FLF_P2), 
+		.FMU_VLF_E2(FMU_VLF_E2), 
+		.\FMU_CLK40_UL- (\FMU_CLK40_UL- ), 
+		.\FMU_CLK40_UL+ (\FMU_CLK40_UL+ ), 
+		.RST_FFEMU(RST_FFEMU), 
+		.FMU_INJPLS(FMU_INJPLS), 
+		.FMU_EXTPLS(FMU_EXTPLS), 
+		.\SKW_EXTPLS- (\SKW_EXTPLS- ), 
+		.\SKW_EXTPLS+ (\SKW_EXTPLS+ ), 
+		.\SKW_INJPLS- (\SKW_INJPLS- ), 
+		.\SKW_INJPLS+ (\SKW_INJPLS+ ), 
+		.INJPLS_LV(INJPLS_LV), 
+		.EXTPLS_LV(EXTPLS_LV), 
+		.\INJPULSE- (\INJPULSE- ), 
+		.\INJPULSE+ (\INJPULSE+ ), 
+		.\EXTPULSE- (\EXTPULSE- ), 
+		.\EXTPULSE+ (\EXTPULSE+ ), 
+		.SPI_RTN_LV(SPI_RTN_LV), 
+		.SPI_CK_LV(SPI_CK_LV), 
+		.SPI_DAT_LV(SPI_DAT_LV), 
+		.ADC_CS_LV_B(ADC_CS_LV_B), 
+		.CAL_DAC_CS_LV_B(CAL_DAC_CS_LV_B), 
+		.COMP_DAC_CS_LV_B(COMP_DAC_CS_LV_B), 
+		.BPI_AD(BPI_AD), 
+		.CFG_DAT(CFG_DAT), 
+		.BPI_AD21_RS0(BPI_AD21_RS0), 
+		.BPI_AD22_RS1(BPI_AD22_RS1), 
+		.FCS_B(FCS_B), 
+		.FOE_B(FOE_B), 
+		.FWE_B(FWE_B), 
+		.FLATCH_B(FLATCH_B), 
+		.G1SHOUTLV(G1SHOUTLV), 
+		.G2SHOUTLV(G2SHOUTLV), 
+		.G3SHOUTLV(G3SHOUTLV), 
+		.G4SHOUTLV(G4SHOUTLV), 
+		.G5SHOUTLV(G5SHOUTLV), 
+		.G6SHOUTLV(G6SHOUTLV), 
+		.G1SHINLV(G1SHINLV), 
+		.G2SHINLV(G2SHINLV), 
+		.G3SHINLV(G3SHINLV), 
+		.G4SHINLV(G4SHINLV), 
+		.G5SHINLV(G5SHINLV), 
+		.G6SHINLV(G6SHINLV), 
+		.G1SHCKLV(G1SHCKLV), 
+		.G2SHCKLV(G2SHCKLV), 
+		.G3SHCKLV(G3SHCKLV), 
+		.G4SHCKLV(G4SHCKLV), 
+		.G5SHCKLV(G5SHCKLV), 
+		.G6SHCKLV(G6SHCKLV), 
+		.G1AD_N(G1AD_N), 
+		.G1AD_P(G1AD_P), 
+		.G2AD_N(G2AD_N), 
+		.G2AD_P(G2AD_P), 
+		.G3AD_N(G3AD_N), 
+		.G3AD_P(G3AD_P), 
+		.G4AD_N(G4AD_N), 
+		.G4AD_P(G4AD_P), 
+		.G5AD_N(G5AD_N), 
+		.G5AD_P(G5AD_P), 
+		.G6AD_N(G6AD_N), 
+		.G6AD_P(G6AD_P), 
+		.G1ADCLK0N(G1ADCLK0N), 
+		.G1ADCLK0P(G1ADCLK0P), 
+		.G1ADCLK1N(G1ADCLK1N), 
+		.G1ADCLK1P(G1ADCLK1P), 
+		.G1LCLK0N(G1LCLK0N), 
+		.G1LCLK0P(G1LCLK0P), 
+		.G1LCLK1N(G1LCLK1N), 
+		.G1LCLK1P(G1LCLK1P), 
+		.G2ADCLK0N(G2ADCLK0N), 
+		.G2ADCLK0P(G2ADCLK0P), 
+		.G2ADCLK1N(G2ADCLK1N), 
+		.G2ADCLK1P(G2ADCLK1P), 
+		.G2LCLK0N(G2LCLK0N), 
+		.G2LCLK0P(G2LCLK0P), 
+		.G2LCLK1N(G2LCLK1N), 
+		.G2LCLK1P(G2LCLK1P), 
+		.G3ADCLK0N(G3ADCLK0N), 
+		.G3ADCLK0P(G3ADCLK0P), 
+		.G3ADCLK1N(G3ADCLK1N), 
+		.G3ADCLK1P(G3ADCLK1P), 
+		.G3LCLK0N(G3LCLK0N), 
+		.G3LCLK0P(G3LCLK0P), 
+		.G3LCLK1N(G3LCLK1N), 
+		.G3LCLK1P(G3LCLK1P), 
+		.G4ADCLK0N(G4ADCLK0N), 
+		.G4ADCLK0P(G4ADCLK0P), 
+		.G4ADCLK1N(G4ADCLK1N), 
+		.G4ADCLK1P(G4ADCLK1P), 
+		.G4LCLK0N(G4LCLK0N), 
+		.G4LCLK0P(G4LCLK0P), 
+		.G4LCLK1N(G4LCLK1N), 
+		.G4LCLK1P(G4LCLK1P), 
+		.G5ADCLK0N(G5ADCLK0N), 
+		.G5ADCLK0P(G5ADCLK0P), 
+		.G5ADCLK1N(G5ADCLK1N), 
+		.G5ADCLK1P(G5ADCLK1P), 
+		.G5LCLK0N(G5LCLK0N), 
+		.G5LCLK0P(G5LCLK0P), 
+		.G5LCLK1N(G5LCLK1N), 
+		.G5LCLK1P(G5LCLK1P), 
+		.G6ADCLK0N(G6ADCLK0N), 
+		.G6ADCLK0P(G6ADCLK0P), 
+		.G6ADCLK1N(G6ADCLK1N), 
+		.G6ADCLK1P(G6ADCLK1P), 
+		.G6LCLK0N(G6LCLK0N), 
+		.G6LCLK0P(G6LCLK0P), 
+		.G6LCLK1N(G6LCLK1N), 
+		.G6LCLK1P(G6LCLK1P), 
+		.G1ADC_CS0_B_25(G1ADC_CS0_B_25), 
+		.G1ADC_CS1_B_25(G1ADC_CS1_B_25), 
+		.G2ADC_CS0_B_25(G2ADC_CS0_B_25), 
+		.G2ADC_CS1_B_25(G2ADC_CS1_B_25), 
+		.G3ADC_CS0_B_25(G3ADC_CS0_B_25), 
+		.G3ADC_CS1_B_25(G3ADC_CS1_B_25), 
+		.G4ADC_CS0_B_25(G4ADC_CS0_B_25), 
+		.G4ADC_CS1_B_25(G4ADC_CS1_B_25), 
+		.G5ADC_CS0_B_25(G5ADC_CS0_B_25), 
+		.G5ADC_CS1_B_25(G5ADC_CS1_B_25), 
+		.G6ADC_CS0_B_25(G6ADC_CS0_B_25), 
+		.G6ADC_CS1_B_25(G6ADC_CS1_B_25), 
+		.ADC_RST_B_25(ADC_RST_B_25), 
+		.ADC_SCLK_25(ADC_SCLK_25), 
+		.ADC_SDATA_25(ADC_SDATA_25), 
+		.GA1ADCCLK_FN(GA1ADCCLK_FN), 
+		.GA1ADCCLK_FP(GA1ADCCLK_FP), 
+		.GA2ADCCLK_FN(GA2ADCCLK_FN), 
+		.GA2ADCCLK_FP(GA2ADCCLK_FP), 
+		.GA3ADCCLK_FN(GA3ADCCLK_FN), 
+		.GA3ADCCLK_FP(GA3ADCCLK_FP), 
+		.G1C_LV(G1C_LV), 
+		.G2C_LV(G2C_LV), 
+		.G3C_LV(G3C_LV), 
+		.G4C_LV(G4C_LV), 
+		.G5C_LV(G5C_LV), 
+		.G6C_LV(G6C_LV), 
+		.CMODE(CMODE), 
+		.CTIME(CTIME), 
+		.LCTCLK(LCTCLK), 
+		.LCTRST(LCTRST), 
+		.DATAOUT(DATAOUT), 
+		.CHAN_LNK_CLK(CHAN_LNK_CLK), 
+		.MB_FIFO_PUSH_B(MB_FIFO_PUSH_B), 
+		.MOVLP(MOVLP), 
+		.OVLPMUX(OVLPMUX), 
+		.DATAAVAIL(DATAAVAIL), 
+		.ENDWORD(ENDWORD), 
+		.\SKW_L1A- (\SKW_L1A- ), 
+		.\SKW_L1A+ (\SKW_L1A+ ), 
+		.\SKW_L1A_MATCH- (\SKW_L1A_MATCH- ), 
+		.\SKW_L1A_MATCH+ (\SKW_L1A_MATCH+ ), 
+		.\SKW_RESYNC- (\SKW_RESYNC- ), 
+		.\SKW_RESYNC+ (\SKW_RESYNC+ ), 
+		.\SKW_BC0- (\SKW_BC0- ), 
+		.\SKW_BC0+ (\SKW_BC0+ ), 
+		.DAQ_RX_P(DAQ_RX_P), 
+		.DAQ_RX_N(DAQ_RX_N), 
+		.DAQ_TDIS(DAQ_TDIS), 
+		.DAQ_TX_P(DAQ_TX_P), 
+		.DAQ_TX_N(DAQ_TX_N), 
+		.ALT_SIGDET(ALT_SIGDET), 
+		.TRG_RX_P(TRG_RX_P), 
+		.TRG_RX_N(TRG_RX_N), 
+		.TRG_TDIS(TRG_TDIS), 
+		.TRG_TX_P(TRG_TX_P), 
+		.TRG_TX_N(TRG_TX_N), 
+		.QP_ERROR(QP_ERROR), 
+		.QP_LOCKED(QP_LOCKED), 
+		.QP_RST_B(QP_RST_B), 
+		.DV4P_3_CUR_P(DV4P_3_CUR_P), 
+		.DV4P_3_CUR_N(DV4P_3_CUR_N), 
+		.DV3P_2_CUR_N(DV3P_2_CUR_N), 
+		.DV3P_2_CUR_P(DV3P_2_CUR_P), 
+		.DV3P_25_CUR_N(DV3P_25_CUR_N), 
+		.DV3P_25_CUR_P(DV3P_25_CUR_P), 
+		.V3PDCOMP_MONN(V3PDCOMP_MONN), 
+		.V3PDCOMP_MONP(V3PDCOMP_MONP), 
+		.V3PIO_MONN(V3PIO_MONN), 
+		.V3PIO_MONP(V3PIO_MONP), 
+		.V25IO_MONN(V25IO_MONN), 
+		.V25IO_MONP(V25IO_MONP), 
+		.V5PACOMP_MONN(V5PACOMP_MONN), 
+		.V5PACOMP_MONP(V5PACOMP_MONP), 
+		.V5PSUB_MONN(V5PSUB_MONN), 
+		.V5PSUB_MONP(V5PSUB_MONP), 
+		.V5PPA_MONP(V5PPA_MONP), 
+		.V5PPA_MONN(V5PPA_MONN), 
+		.V33PAADC_MONP(V33PAADC_MONP), 
+		.V33PAADC_MONN(V33PAADC_MONN), 
+		.V18PDADC_MONP(V18PDADC_MONP), 
+		.V18PDADC_MONN(V18PDADC_MONN), 
+		.V5PAMP_MONP(V5PAMP_MONP), 
+		.V5PAMP_MONN(V5PAMP_MONN), 
+		.AV54P_3_CUR_N(AV54P_3_CUR_N), 
+		.AV54P_3_CUR_P(AV54P_3_CUR_P), 
+		.AV54P_5_CUR_N(AV54P_5_CUR_N), 
+		.AV54P_5_CUR_P(AV54P_5_CUR_P), 
+		.SEL_SKW_B(SEL_SKW_B), 
+		.SEL_CON_B(SEL_CON_B), 
+		.TP_B24_(TP_B24_), 
+		.TP_B25_(TP_B25_), 
+		.TP_B26_(TP_B26_), 
+		.TP_B35_(TP_B35_)
+	);
+
+	initial begin
+		// Initialize Inputs
+		CMS_CLK_N = 0;
+		CMS_CLK_P = 0;
+		CMS80_N = 0;
+		CMS80_P = 0;
+		QPLL_CLK_AC_P = 0;
+		QPLL_CLK_AC_N = 0;
+		XO_CLK_AC_P = 0;
+		XO_CLK_AC_N = 0;
+		\FEM_CLK320-  = 0;
+		\FEM_CLK320+  = 0;
+		GC0N = 0;
+		GC0P = 0;
+		GC1N = 0;
+		GC1P = 0;
+		CLK320_SIGDET = 0;
+		\FEM_RX_DAT-  = 0;
+		\FEM_RX_DAT+  = 0;
+		CTRL_SIGDET = 0;
+		FMU_TOKEN = 0;
+		FMU_L1A = 0;
+		FMU_RESYNC = 0;
+		FMU_SPI_CS0 = 0;
+		FMU_SPI_CS1 = 0;
+		FMU_SPI_CLK = 0;
+		FMU_SPI_DAT = 0;
+		FMU_INJPLS = 0;
+		FMU_EXTPLS = 0;
+		\SKW_EXTPLS-  = 0;
+		\SKW_EXTPLS+  = 0;
+		\SKW_INJPLS-  = 0;
+		\SKW_INJPLS+  = 0;
+		INJPLS_LV = 0;
+		EXTPLS_LV = 0;
+		SPI_RTN_LV = 0;
+		G1SHOUTLV = 0;
+		G2SHOUTLV = 0;
+		G3SHOUTLV = 0;
+		G4SHOUTLV = 0;
+		G5SHOUTLV = 0;
+		G6SHOUTLV = 0;
+		G1AD_N = 0;
+		G1AD_P = 0;
+		G2AD_N = 0;
+		G2AD_P = 0;
+		G3AD_N = 0;
+		G3AD_P = 0;
+		G4AD_N = 0;
+		G4AD_P = 0;
+		G5AD_N = 0;
+		G5AD_P = 0;
+		G6AD_N = 0;
+		G6AD_P = 0;
+		G1ADCLK0N = 0;
+		G1ADCLK0P = 0;
+		G1ADCLK1N = 0;
+		G1ADCLK1P = 0;
+		G1LCLK0N = 0;
+		G1LCLK0P = 0;
+		G1LCLK1N = 0;
+		G1LCLK1P = 0;
+		G2ADCLK0N = 0;
+		G2ADCLK0P = 0;
+		G2ADCLK1N = 0;
+		G2ADCLK1P = 0;
+		G2LCLK0N = 0;
+		G2LCLK0P = 0;
+		G2LCLK1N = 0;
+		G2LCLK1P = 0;
+		G3ADCLK0N = 0;
+		G3ADCLK0P = 0;
+		G3ADCLK1N = 0;
+		G3ADCLK1P = 0;
+		G3LCLK0N = 0;
+		G3LCLK0P = 0;
+		G3LCLK1N = 0;
+		G3LCLK1P = 0;
+		G4ADCLK0N = 0;
+		G4ADCLK0P = 0;
+		G4ADCLK1N = 0;
+		G4ADCLK1P = 0;
+		G4LCLK0N = 0;
+		G4LCLK0P = 0;
+		G4LCLK1N = 0;
+		G4LCLK1P = 0;
+		G5ADCLK0N = 0;
+		G5ADCLK0P = 0;
+		G5ADCLK1N = 0;
+		G5ADCLK1P = 0;
+		G5LCLK0N = 0;
+		G5LCLK0P = 0;
+		G5LCLK1N = 0;
+		G5LCLK1P = 0;
+		G6ADCLK0N = 0;
+		G6ADCLK0P = 0;
+		G6ADCLK1N = 0;
+		G6ADCLK1P = 0;
+		G6LCLK0N = 0;
+		G6LCLK0P = 0;
+		G6LCLK1N = 0;
+		G6LCLK1P = 0;
+		G1C_LV = 0;
+		G2C_LV = 0;
+		G3C_LV = 0;
+		G4C_LV = 0;
+		G5C_LV = 0;
+		G6C_LV = 0;
+		\SKW_L1A-  = 0;
+		\SKW_L1A+  = 0;
+		\SKW_L1A_MATCH-  = 0;
+		\SKW_L1A_MATCH+  = 0;
+		\SKW_RESYNC-  = 0;
+		\SKW_RESYNC+  = 0;
+		\SKW_BC0-  = 0;
+		\SKW_BC0+  = 0;
+		DAQ_RX_P = 0;
+		DAQ_RX_N = 0;
+		ALT_SIGDET = 0;
+		TRG_RX_P = 0;
+		TRG_RX_N = 0;
+		QP_ERROR = 0;
+		QP_LOCKED = 0;
+		DV4P_3_CUR_P = 0;
+		DV4P_3_CUR_N = 0;
+		DV3P_2_CUR_N = 0;
+		DV3P_2_CUR_P = 0;
+		DV3P_25_CUR_N = 0;
+		DV3P_25_CUR_P = 0;
+		V3PDCOMP_MONN = 0;
+		V3PDCOMP_MONP = 0;
+		V3PIO_MONN = 0;
+		V3PIO_MONP = 0;
+		V25IO_MONN = 0;
+		V25IO_MONP = 0;
+		V5PACOMP_MONN = 0;
+		V5PACOMP_MONP = 0;
+		V5PSUB_MONN = 0;
+		V5PSUB_MONP = 0;
+		V5PPA_MONP = 0;
+		V5PPA_MONN = 0;
+		V33PAADC_MONP = 0;
+		V33PAADC_MONN = 0;
+		V18PDADC_MONP = 0;
+		V18PDADC_MONN = 0;
+		V5PAMP_MONP = 0;
+		V5PAMP_MONN = 0;
+		AV54P_3_CUR_N = 0;
+		AV54P_3_CUR_P = 0;
+		AV54P_5_CUR_N = 0;
+		AV54P_5_CUR_P = 0;
+		SEL_SKW_B = 0;
+		SEL_CON_B = 0;
+
+		// Wait 100 ns for global reset to finish
+		#100;
+        
+		// Add stimulus here
+
+	end
+      
+endmodule
+

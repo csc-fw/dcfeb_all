@@ -1,0 +1,19 @@
+# Output products list for <fifo1_la>
+_xmsgs\pn_parser.xmsgs
+fifo1_la.asy
+fifo1_la.cdc
+fifo1_la.constraints\fifo1_la.ucf
+fifo1_la.constraints\fifo1_la.xdc
+fifo1_la.gise
+fifo1_la.ncf
+fifo1_la.ngc
+fifo1_la.sym
+fifo1_la.ucf
+fifo1_la.v
+fifo1_la.veo
+fifo1_la.xco
+fifo1_la.xdc
+fifo1_la.xise
+fifo1_la_flist.txt
+fifo1_la_readme.txt
+fifo1_la_xmdf.tcl

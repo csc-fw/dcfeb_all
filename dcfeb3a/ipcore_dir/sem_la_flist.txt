@@ -1,0 +1,19 @@
+# Output products list for <sem_la>
+_xmsgs\pn_parser.xmsgs
+sem_la.asy
+sem_la.cdc
+sem_la.constraints\sem_la.ucf
+sem_la.constraints\sem_la.xdc
+sem_la.gise
+sem_la.ncf
+sem_la.ngc
+sem_la.sym
+sem_la.ucf
+sem_la.v
+sem_la.veo
+sem_la.xco
+sem_la.xdc
+sem_la.xise
+sem_la_flist.txt
+sem_la_readme.txt
+sem_la_xmdf.tcl

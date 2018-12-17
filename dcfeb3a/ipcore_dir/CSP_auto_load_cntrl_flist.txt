@@ -1,0 +1,17 @@
+# Output products list for <CSP_auto_load_cntrl>
+CSP_auto_load_cntrl.asy
+CSP_auto_load_cntrl.constraints\CSP_auto_load_cntrl.ucf
+CSP_auto_load_cntrl.constraints\CSP_auto_load_cntrl.xdc
+CSP_auto_load_cntrl.gise
+CSP_auto_load_cntrl.ngc
+CSP_auto_load_cntrl.sym
+CSP_auto_load_cntrl.ucf
+CSP_auto_load_cntrl.v
+CSP_auto_load_cntrl.veo
+CSP_auto_load_cntrl.xco
+CSP_auto_load_cntrl.xdc
+CSP_auto_load_cntrl.xise
+CSP_auto_load_cntrl_flist.txt
+CSP_auto_load_cntrl_readme.txt
+CSP_auto_load_cntrl_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

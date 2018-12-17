@@ -1,0 +1,16 @@
+# Output products list for <CSP_sem_cntrl>
+CSP_sem_cntrl.asy
+CSP_sem_cntrl.constraints\CSP_sem_cntrl.ucf
+CSP_sem_cntrl.constraints\CSP_sem_cntrl.xdc
+CSP_sem_cntrl.gise
+CSP_sem_cntrl.ngc
+CSP_sem_cntrl.ucf
+CSP_sem_cntrl.v
+CSP_sem_cntrl.veo
+CSP_sem_cntrl.xco
+CSP_sem_cntrl.xdc
+CSP_sem_cntrl.xise
+CSP_sem_cntrl_flist.txt
+CSP_sem_cntrl_readme.txt
+CSP_sem_cntrl_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

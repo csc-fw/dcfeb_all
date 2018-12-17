@@ -1,0 +1,17 @@
+# Output products list for <CSP_rngbuf_daq>
+CSP_rngbuf_daq.asy
+CSP_rngbuf_daq.constraints\CSP_rngbuf_daq.ucf
+CSP_rngbuf_daq.constraints\CSP_rngbuf_daq.xdc
+CSP_rngbuf_daq.gise
+CSP_rngbuf_daq.ngc
+CSP_rngbuf_daq.sym
+CSP_rngbuf_daq.ucf
+CSP_rngbuf_daq.v
+CSP_rngbuf_daq.veo
+CSP_rngbuf_daq.xco
+CSP_rngbuf_daq.xdc
+CSP_rngbuf_daq.xise
+CSP_rngbuf_daq_flist.txt
+CSP_rngbuf_daq_readme.txt
+CSP_rngbuf_daq_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

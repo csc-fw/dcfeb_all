@@ -1,0 +1,18 @@
+# Output products list for <readout_la>
+_xmsgs\pn_parser.xmsgs
+readout_la.asy
+readout_la.cdc
+readout_la.constraints\readout_la.ucf
+readout_la.constraints\readout_la.xdc
+readout_la.gise
+readout_la.ncf
+readout_la.ngc
+readout_la.ucf
+readout_la.v
+readout_la.veo
+readout_la.xco
+readout_la.xdc
+readout_la.xise
+readout_la_flist.txt
+readout_la_readme.txt
+readout_la_xmdf.tcl
